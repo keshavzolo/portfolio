@@ -1,0 +1,350 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#171817" />
+    <meta
+      name="description"
+      content="Keshav Maheshwari is a computer science undergraduate and full-stack developer building web applications with React, Node.js, TypeScript, and PostgreSQL."
+    />
+    <meta name="author" content="Keshav Maheshwari" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://keshavzolo.github.io/" />
+    <title>Keshav Maheshwari — Full-Stack Developer</title>
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Keshav Maheshwari — Full-Stack Developer" />
+    <meta property="og:description" content="Computer science undergraduate and full-stack developer building practical web applications." />
+    <meta property="og:url" content="https://keshavzolo.github.io/" />
+    <meta property="og:image" content="https://keshavzolo.github.io/avatar.png" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Keshav Maheshwari — Full-Stack Developer" />
+    <meta name="twitter:description" content="Computer science undergraduate and full-stack developer building practical web applications." />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Keshav Maheshwari",
+        "url": "https://keshavzolo.github.io/",
+        "jobTitle": "Full-Stack Developer",
+        "image": "https://keshavzolo.github.io/avatar.png",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Gwalior",
+          "addressRegion": "Madhya Pradesh",
+          "addressCountry": "IN"
+        },
+        "sameAs": [
+          "https://github.com/keshavzolo",
+          "https://linkedin.com/in/keshav2005",
+          "https://codeforces.com/profile/keshav_mah",
+          "https://leetcode.com/keshav_mah/"
+        ]
+      }
+    </script>
+    <script src="./loading.js"></script>
+    <script>
+      (() => {
+        const savedTheme = localStorage.getItem("portfolio-theme");
+        const isDark = savedTheme === null ? true : savedTheme === "dark";
+        document.documentElement.classList.toggle("dark", isDark);
+      })();
+    </script>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <div class="page-loader" role="status" aria-label="Loading portfolio">
+      <div class="loader-card">
+        <div class="loader-heading">
+          <span class="loader-brand">KESHAV.DEV</span>
+          <span class="loader-state">INITIALIZING</span>
+        </div>
+        <p class="loader-command"><span aria-hidden="true">$</span> npm run build</p>
+        <div class="loader-activity">
+          <span class="loader-spinner" aria-hidden="true"></span>
+          <span>Compiling ideas &amp; shipping pixels<span class="loader-ellipsis" aria-hidden="true">...</span></span>
+        </div>
+        <div class="loader-track" aria-hidden="true"><span></span></div>
+        <p class="loader-commit">git commit -m "make it happen"</p>
+      </div>
+    </div>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <nav class="top-nav wrap" aria-label="Main navigation">
+        <div class="nav-links">
+          <a href="#home" aria-current="page">Home</a>
+          <a href="#experience">Experience</a>
+          <a href="#projects">Projects</a>
+          <a href="./anime.html">Anime</a>
+          <a href="#about">About</a>
+        </div>
+        <div class="nav-tools">
+          <button class="tool-button search-trigger" type="button" aria-label="Search this page (Ctrl+K)">
+            <svg aria-hidden="true" viewBox="0 0 24 24">
+              <circle cx="10.8" cy="10.8" r="6.3"></circle>
+              <path d="m16 16 4.4 4.4"></path>
+            </svg>
+            <span class="search-label">Search</span>
+            <kbd>Ctrl</kbd><kbd>K</kbd>
+          </button>
+          <button class="tool-button theme-toggle" type="button" aria-label="Switch to dark mode" aria-pressed="false">
+            <svg class="sun-icon" aria-hidden="true" viewBox="0 0 24 24">
+              <circle cx="12" cy="12" r="4"></circle>
+              <path d="M12 2v2m0 16v2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M2 12h2m16 0h2M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42"></path>
+            </svg>
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <main id="main" class="wrap">
+      <section class="intro section-anchor" id="home" aria-labelledby="intro-title">
+        <div class="profile">
+          <button class="avatar-trigger" type="button" aria-label="View profile portrait enlarged" aria-haspopup="dialog">
+            <img class="avatar" src="./avatar.png" alt="Illustrated profile portrait" />
+          </button>
+          <div class="profile-copy">
+            <p class="eyebrow">Full-Stack Developer · CSE Undergraduate</p>
+            <h1 id="intro-title">Keshav Maheshwari</h1>
+            <p class="profile-tagline">Keep learning. Keep building.</p>
+          </div>
+        </div>
+        <p class="intro-line">I’m a computer science undergraduate and full-stack developer turning ideas into thoughtful digital experiences—from intuitive interfaces to reliable products that solve real-world problems.</p>
+        <div class="interest-row" aria-label="Portfolio sections">
+          <a href="#experience"><span class="interest-dot dot-lilac"></span>Experience</a>
+          <a href="#projects"><span class="interest-dot dot-peach"></span>Selected projects</a>
+          <a href="#about"><span class="interest-dot dot-mint"></span>Skills &amp; education</a>
+          <a class="resume-download" href="./resume.pdf" download="Keshav-Maheshwari-Resume.pdf" aria-label="Download Keshav Maheshwari's resume as a PDF"><span aria-hidden="true">↓</span>Download resume</a>
+        </div>
+      </section>
+
+      <section class="content-section contributions-section" aria-label="GitHub contributions">
+        <div class="section-heading">
+          <a class="contributions-link" href="https://github.com/keshavzolo" target="_blank" rel="noopener noreferrer">View GitHub <span aria-hidden="true">↗</span></a>
+        </div>
+        <div class="contributions-card">
+          <p class="contributions-total" id="contributions-total" aria-live="polite">Loading GitHub contributions...</p>
+          <div class="contributions-scroll" tabindex="0" aria-label="Scrollable contribution calendar">
+            <div class="contributions-calendar" id="contributions-calendar"></div>
+          </div>
+          <a class="contributions-error" href="https://github.com/keshavzolo" target="_blank" rel="noopener noreferrer">View contributions on GitHub <span aria-hidden="true">↗</span></a>
+          <div class="contributions-legend" aria-hidden="true">
+            <span>Less</span>
+            <span class="contribution-day level-0"></span>
+            <span class="contribution-day level-1"></span>
+            <span class="contribution-day level-2"></span>
+            <span class="contribution-day level-3"></span>
+            <span class="contribution-day level-4"></span>
+            <span>More</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="content-section section-anchor" id="experience" aria-labelledby="experience-title">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Professional experience</p>
+            <h2 id="experience-title">Experience</h2>
+          </div>
+        </div>
+        <div class="work-list">
+          <details class="work-item">
+            <summary class="work-summary">
+              <span class="work-company"><span class="work-company-dot" aria-hidden="true"></span><span>Zidio Development Pvt. Ltd.</span></span>
+              <span class="work-marker" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="m8 8-4 4 4 4m8-8 4 4-4 4m-3-7-2 6"></path></svg>
+              </span>
+              <span class="work-title-group">
+                <span class="work-title">Full-Stack Developer Intern</span>
+                <span class="work-subtitle">Internship <span aria-hidden="true">|</span> July 2026 — August 2026</span>
+                <span class="work-skills" aria-label="Technologies used">
+                  <span>React</span><span>TypeScript</span><span>Node.js</span><span>Express.js</span><span>PostgreSQL</span><span>Gemini AI</span>
+                </span>
+              </span>
+              <span class="expand-icon" aria-hidden="true"></span>
+            </summary>
+            <ul class="work-detail">
+              <li>Developed a full-stack AI-powered customer feedback platform using React, TypeScript, Node.js, Express.js, and PostgreSQL.</li>
+              <li>Implemented JWT authentication, multi-organization workspaces, and role-based access control.</li>
+              <li>Built validated CSV imports and integrated Google Gemini for sentiment analysis and review summaries.</li>
+              <li>Designed Recharts dashboards for sentiment, ratings, categories, trends, and AI-generated insights.</li>
+            </ul>
+          </details>
+        </div>
+      </section>
+
+      <section class="content-section section-anchor" id="projects" aria-labelledby="projects-title">
+        <div class="section-heading">
+          <div>
+            
+            <h2 id="projects-title">Projects</h2>
+          </div>
+          <span class="section-count" aria-hidden="true"></span>
+        </div>
+        <div class="notes-grid">
+          <details class="note-card" name="project-details">
+            <summary class="note-link">
+              <span class="note-art art-orbit" aria-hidden="true"><span></span><i></i></span>
+              <span class="note-category">MERN · Judge0 · Docker · AWS</span>
+              <h3>CodeForge</h3>
+              <p>A coding platform with authentication, an editor, problem listings, submissions, and automated evaluation.</p>
+              <span class="note-expand-hint">
+                <span class="note-expand-closed">Click to view project details</span>
+                <span class="note-expand-open">Click to hide project details</span>
+                <span class="note-expand-arrow" aria-hidden="true">↓</span>
+              </span>
+              <span class="note-footer"><span>2026</span><a href="" target="_blank" rel="noopener noreferrer" aria-label="View CodeForge on GitHub (opens in a new tab)">View on GitHub <span aria-hidden="true">↗</span></a></span>
+            </summary>
+            <ul class="note-expanded">
+              <li>Built a LeetCode-style platform with authentication, problem listings, a code editor, submissions, and automated evaluation.</li>
+              <li>Integrated Judge0 CE on Docker and AWS for asynchronous execution against visible and hidden tests, with a 30-second timeout and one-second result polling.</li>
+              <li>Added per-test-case results, runtime and memory usage, submission history, and Redis throttling with a 10-second cooldown.</li>
+              <li>Secured accounts with JWT authentication, HTTP-only cookies, bcrypt password hashing, and role-based admin access.</li>
+              <li>Reduced authentication latency by 65% (120 ms to 42 ms) with Redis-backed JWT revocation and optimized session checks.</li>
+            </ul>
+          </details>
+          <details class="note-card" name="project-details">
+            <summary class="note-link">
+              <span class="note-art art-sunrise" aria-hidden="true"><span></span><i></i></span>
+              <span class="note-category">React · TypeScript · Node.js · PostgreSQL · Gemini AI</span>
+              <h3>Project LOOP</h3>
+              <p>An AI-powered platform for organizations to upload, manage, and analyze customer feedback.</p>
+              <span class="note-expand-hint">
+                <span class="note-expand-closed">Click to view project details</span>
+                <span class="note-expand-open">Click to hide project details</span>
+                <span class="note-expand-arrow" aria-hidden="true">↓</span>
+              </span>
+              <span class="note-footer"><span>2026</span><a href="https://github.com/keshavzolo/Project-LOOP-AI-Customer-Feedback-Intelligence-Platform" target="_blank" rel="noopener noreferrer" aria-label="View Project LOOP on GitHub (opens in a new tab)">View on GitHub <span aria-hidden="true">↗</span></a></span>
+            </summary>
+            <ul class="note-expanded">
+              <li>Built an AI-powered customer feedback platform for organizations to securely upload, manage, and analyze reviews.</li>
+              <li>Implemented CSV processing for files up to 5 MB with RFC 4180-compliant parsing, validation of four required fields, and transactional batch insertion; analyzed reviews in batches of 20.</li>
+              <li>Created responsive Recharts dashboards for sentiment, five-point ratings, category analytics, review trends, average ratings, and AI-generated summaries and recommendations.</li>
+            </ul>
+          </details>
+          <details class="note-card" name="project-details">
+            <summary class="note-link">
+              <span class="note-art art-checker" aria-hidden="true"><span></span><i></i></span>
+              <span class="note-category">Python · Pandas · NLP</span>
+              <h3>Movie Recommendation System</h3>
+              <p>A content-based recommendation engine built from movie metadata and text features.</p>
+              <span class="note-expand-hint">
+                <span class="note-expand-closed">Click to view project details</span>
+                <span class="note-expand-open">Click to hide project details</span>
+                <span class="note-expand-arrow" aria-hidden="true">↓</span>
+              </span>
+              <span class="note-footer"><span>2024</span><a href="https://github.com/keshavzolo/Movie-Recommendation-System" target="_blank" rel="noopener noreferrer" aria-label="View Movie Recommendation System on GitHub (opens in a new tab)">View on GitHub <span aria-hidden="true">↗</span></a></span>
+            </summary>
+            <ul class="note-expanded">
+              <li>Built a content-based movie recommendation engine using metadata and text features, vectorization, and cosine similarity.</li>
+              <li>Improved recommendations through data cleaning and feature-combination techniques.</li>
+            </ul>
+          </details>
+        </div>
+      </section>
+
+      <section class="content-section section-anchor" id="about" aria-labelledby="about-title">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Background</p>
+            <h2 id="about-title">Education, skills &amp; certifications</h2>
+          </div>
+        </div>
+        <div class="elsewhere-grid">
+          <details class="elsewhere-card">
+            <summary class="elsewhere-summary">
+              <span class="elsewhere-icon icon-book" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 4.5A2.5 2.5 0 0 1 7.5 2H20v17H7.5A2.5 2.5 0 0 0 5 21.5v-17Z"></path><path d="M5 18.5A2.5 2.5 0 0 1 7.5 16H20M9 6h7"></path></svg></span>
+              <span><strong>Amity University Madhya Pradesh</strong><span>B.Tech, Computer Science and Engineering · 2023–2027 · GPA 7.91</span></span>
+              <span class="card-arrow" aria-hidden="true">⌄</span>
+            </summary>
+            <p class="elsewhere-detail">Gwalior, Madhya Pradesh. Previously studied at Sanskar Public School (Intermediate, PCM; GPA 7.1) and St. Paul’s School (Grade 10; GPA 8.1).</p>
+          </details>
+          <details class="elsewhere-card">
+            <summary class="elsewhere-summary">
+              <span class="elsewhere-icon icon-sparkle" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="m12 2 1.8 7.2L21 11l-7.2 1.8L12 20l-1.8-7.2L3 11l7.2-1.8L12 2Z"></path><path d="m19 15 .8 2.2L22 18l-2.2.8L19 21l-.8-2.2L16 18l2.2-.8L19 15Z"></path></svg></span>
+              <span><strong>Technical skills</strong><span>Languages, frameworks, databases, and developer tools.</span></span>
+              <span class="card-arrow" aria-hidden="true">⌄</span>
+            </summary>
+            <p class="elsewhere-detail">Languages: C, C++, JavaScript, Python, SQL. Frameworks and technologies: React, Node.js, Express.js, HTML5, CSS3, Bootstrap, JWT, WebSocket, Redis, Docker. Databases: PostgreSQL, MySQL, MongoDB. Data science: NumPy, Pandas, Matplotlib, Seaborn. Tools: AWS, Git, GitHub, VS Code, Postman, PyCharm, IntelliJ, Android Studio, Canva.</p>
+          </details>
+          <details class="elsewhere-card">
+            <summary class="elsewhere-summary">
+              <span class="elsewhere-icon icon-sparkle" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="m12 2 1.8 7.2L21 11l-7.2 1.8L12 20l-1.8-7.2L3 11l7.2-1.8L12 2Z"></path><path d="m19 15 .8 2.2L22 18l-2.2.8L19 21l-.8-2.2L16 18l2.2-.8L19 15Z"></path></svg></span>
+              <span><strong>Certifications</strong><span>NPTEL · Oracle</span></span>
+              <span class="card-arrow" aria-hidden="true">⌄</span>
+            </summary>
+            <p class="elsewhere-detail">Advanced R Programming — NPTEL. Data Science Professional — Oracle.</p>
+          </details>
+        </div>
+      </section>
+    </main>
+
+    <aside class="closing-note wrap" aria-label="A thought to take with you">
+      <span class="quote-mark" aria-hidden="true">“</span>
+      <p>Building useful products, one thoughtful detail at a time.</p>
+      <span class="quote-spark" aria-hidden="true">✳</span>
+    </aside>
+
+    <footer class="site-footer">
+      <div class="footer-inner wrap">
+        <div class="footer-top">
+          <div class="footer-brand">
+            <a class="footer-name" href="#home">Keshav Maheshwari<span class="brand-dot">.</span></a>
+            <p>Full-stack developer and computer science undergraduate in Gwalior, India.</p>
+          </div>
+          <nav class="footer-nav" aria-label="Footer navigation">
+            <span class="footer-label">Find me online</span>
+            <a href="https://github.com/keshavzolo" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <a href="https://linkedin.com/in/keshav2005" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <a href="https://codeforces.com/profile/keshav_mah" target="_blank" rel="noopener noreferrer">Codeforces</a>
+            <a href="https://leetcode.com/keshav_mah/" target="_blank" rel="noopener noreferrer">LeetCode</a>
+            <a href="https://auth.geeksforgeeks.org/user/keshavmahe9lyi/practice" target="_blank" rel="noopener noreferrer">GeeksforGeeks</a>
+            <a href="https://www.instagram.com/keshav_m.a.h/" target="_blank" rel="noopener noreferrer">Instagram</a>
+          </nav>
+          <div class="footer-hello" id="connect">
+            <span class="footer-label">Get in touch</span>
+            <a class="copy-note" href="mailto:keshavmaheshwarigwl@gmail.com">keshavmaheshwarigwl@gmail.com</a>
+            <a class="copy-note" href="tel:+917470987068">+91 74709 87068</a>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <span>Based in Gwalior, Madhya Pradesh, India.</span>
+          <a href="#home">Back to top ↑</a>
+        </div>
+      </div>
+    </footer>
+
+    <button class="mascot-button" type="button" aria-label="Say hello to the little mascot" aria-expanded="false">
+      <svg viewBox="0 0 56 56" aria-hidden="true">
+        <path d="M17 17c2-5 6-8 11-8s9 3 11 8l7 20c1 4-2 8-6 8H16c-4 0-7-4-6-8l7-20Z" class="mascot-body"></path>
+        <path d="M22 30h1m10 0h1" class="mascot-eyes"></path>
+        <path d="M24 36c2 2 6 2 8 0" class="mascot-mouth"></path>
+        <path d="M15 15 9 10m32 5 6-5M28 5V2" class="mascot-rays"></path>
+      </svg>
+      <span class="mascot-tooltip">Psst, click me</span>
+    </button>
+    <div class="mascot-message" role="status" aria-live="polite"></div>
+
+    <dialog class="image-dialog" aria-label="Enlarged profile portrait">
+      <button class="image-dialog-close" type="button" aria-label="Close enlarged portrait">×</button>
+      <img class="image-dialog-image" src="./avatar.png" alt="Illustrated profile portrait" />
+    </dialog>
+
+    <dialog class="search-dialog" aria-labelledby="search-title">
+      <form method="dialog" class="search-form">
+        <div class="search-dialog-heading">
+          <h2 id="search-title">Find something</h2>
+          <button class="dialog-close" type="submit" aria-label="Close search">Esc</button>
+        </div>
+        <label class="visually-hidden" for="site-search">Search this page</label>
+        <div class="search-input-wrap">
+          <svg aria-hidden="true" viewBox="0 0 24 24"><circle cx="10.8" cy="10.8" r="6.3"></circle><path d="m16 16 4.4 4.4"></path></svg>
+          <input id="site-search" type="search" placeholder="Try “CodeForge”, “React”, or “education”" autocomplete="off" />
+        </div>
+        <p class="search-hint">Search projects, skills, and sections on this page.</p>
+        <div class="search-results" aria-live="polite"></div>
+      </form>
+    </dialog>
+  </body>
+</html>
