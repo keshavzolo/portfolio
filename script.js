@@ -12,6 +12,7 @@ const mascotButton = document.querySelector(".mascot-button");
 const mascotMessage = document.querySelector(".mascot-message");
 const projectCards = [...document.querySelectorAll(".note-card")];
 const projectGrid = document.querySelector(".notes-grid");
+const elsewhereCards = [...document.querySelectorAll(".elsewhere-card")];
 
 projectCards.forEach((card) => {
   card.addEventListener("toggle", () => {
@@ -24,6 +25,18 @@ projectCards.forEach((card) => {
     }
 
     projectGrid.classList.toggle("has-open-card", projectCards.some((projectCard) => projectCard.open));
+  });
+});
+
+elsewhereCards.forEach((card) => {
+  card.addEventListener("toggle", () => {
+    if (card.open) {
+      elsewhereCards.forEach((otherCard) => {
+        if (otherCard !== card) {
+          otherCard.open = false;
+        }
+      });
+    }
   });
 });
 

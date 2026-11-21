@@ -277,6 +277,12 @@ input:focus-visible {
   color: var(--ink);
 }
 
+.nav-links .anime-nav-link {
+  font-family: "Comic Sans MS", "Trebuchet MS", cursive;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+}
+
 .nav-tools {
   gap: 11px;
 }
@@ -1262,6 +1268,13 @@ html.dark .anime-card {
 .elsewhere-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
+  align-items: start;
+  gap: 12px;
+}
+
+.elsewhere-column {
+  display: grid;
+  align-content: start;
   gap: 12px;
 }
 
@@ -1304,6 +1317,66 @@ html.dark .anime-card {
   border-top: 1px solid var(--line);
   color: var(--muted);
   font-size: 12px;
+}
+
+.elsewhere-point-list {
+  display: grid;
+  gap: 8px;
+  padding-left: 0;
+  list-style: none;
+  line-height: 1.5;
+}
+
+.elsewhere-point-list li {
+  display: grid;
+  grid-template-columns: 6px minmax(0, 1fr);
+  align-items: start;
+  gap: 9px;
+}
+
+.elsewhere-point-list li::before {
+  width: 6px;
+  height: 6px;
+  margin-top: 6px;
+  border-radius: 50%;
+  background: var(--accent);
+  content: "";
+}
+
+.elsewhere-point-list strong {
+  color: var(--ink);
+  font-weight: 650;
+}
+
+.certification-point-list li::before {
+  background: var(--peach);
+}
+
+.certification-point-list li > span > span {
+  display: block;
+  color: var(--muted);
+  font-size: 11px;
+}
+
+.technical-skills-list {
+  margin: 0 13px 13px 64px;
+  padding-left: 18px;
+  line-height: 1.55;
+}
+
+.technical-skills-list li {
+  margin-bottom: 5px;
+  padding-left: 2px;
+}
+
+.technical-skills-list li:last-child {
+  margin-bottom: 0;
+}
+
+.technical-skills-list strong {
+  color: var(--ink);
+  font-size: inherit;
+  font-weight: 650;
 }
 
 .elsewhere-icon {
@@ -1911,8 +1984,25 @@ html.dark .icon-sparkle {
   }
 
   .elsewhere-grid {
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
     gap: 9px;
+  }
+
+  .elsewhere-column {
+    display: contents;
+  }
+
+  .education-card {
+    order: 1;
+  }
+
+  .technical-skills-card {
+    order: 2;
+  }
+
+  .certifications-card {
+    order: 3;
   }
 
   .closing-note {

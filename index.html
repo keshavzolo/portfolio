@@ -76,7 +76,7 @@
           <a href="#home" aria-current="page">Home</a>
           <a href="#experience">Experience</a>
           <a href="#projects">Projects</a>
-          <a href="./anime.html">Anime</a>
+          <a class="anime-nav-link" href="./anime.html">Anime</a>
           <a href="#about">About</a>
         </div>
         <div class="nav-tools">
@@ -252,30 +252,47 @@
           </div>
         </div>
         <div class="elsewhere-grid">
-          <details class="elsewhere-card">
-            <summary class="elsewhere-summary">
-              <span class="elsewhere-icon icon-book" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 4.5A2.5 2.5 0 0 1 7.5 2H20v17H7.5A2.5 2.5 0 0 0 5 21.5v-17Z"></path><path d="M5 18.5A2.5 2.5 0 0 1 7.5 16H20M9 6h7"></path></svg></span>
-              <span><strong>Amity University Madhya Pradesh</strong><span>B.Tech, Computer Science and Engineering · 2023–2027 · GPA 7.91</span></span>
-              <span class="card-arrow" aria-hidden="true">⌄</span>
-            </summary>
-            <p class="elsewhere-detail">Gwalior, Madhya Pradesh. Previously studied at Sanskar Public School (Intermediate, PCM; GPA 7.1) and St. Paul’s School (Grade 10; GPA 8.1).</p>
-          </details>
-          <details class="elsewhere-card">
-            <summary class="elsewhere-summary">
-              <span class="elsewhere-icon icon-sparkle" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="m12 2 1.8 7.2L21 11l-7.2 1.8L12 20l-1.8-7.2L3 11l7.2-1.8L12 2Z"></path><path d="m19 15 .8 2.2L22 18l-2.2.8L19 21l-.8-2.2L16 18l2.2-.8L19 15Z"></path></svg></span>
-              <span><strong>Technical skills</strong><span>Languages, frameworks, databases, and developer tools.</span></span>
-              <span class="card-arrow" aria-hidden="true">⌄</span>
-            </summary>
-            <p class="elsewhere-detail">Languages: C, C++, JavaScript, Python, SQL. Frameworks and technologies: React, Node.js, Express.js, HTML5, CSS3, Bootstrap, JWT, WebSocket, Redis, Docker. Databases: PostgreSQL, MySQL, MongoDB. Data science: NumPy, Pandas, Matplotlib, Seaborn. Tools: AWS, Git, GitHub, VS Code, Postman, PyCharm, IntelliJ, Android Studio, Canva.</p>
-          </details>
-          <details class="elsewhere-card">
-            <summary class="elsewhere-summary">
-              <span class="elsewhere-icon icon-sparkle" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="m12 2 1.8 7.2L21 11l-7.2 1.8L12 20l-1.8-7.2L3 11l7.2-1.8L12 2Z"></path><path d="m19 15 .8 2.2L22 18l-2.2.8L19 21l-.8-2.2L16 18l2.2-.8L19 15Z"></path></svg></span>
-              <span><strong>Certifications</strong><span>NPTEL · Oracle</span></span>
-              <span class="card-arrow" aria-hidden="true">⌄</span>
-            </summary>
-            <p class="elsewhere-detail">Advanced R Programming — NPTEL. Data Science Professional — Oracle.</p>
-          </details>
+          <div class="elsewhere-column">
+            <details class="elsewhere-card education-card" name="background-details">
+              <summary class="elsewhere-summary">
+                <span class="elsewhere-icon icon-book" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 4.5A2.5 2.5 0 0 1 7.5 2H20v17H7.5A2.5 2.5 0 0 0 5 21.5v-17Z"></path><path d="M5 18.5A2.5 2.5 0 0 1 7.5 16H20M9 6h7"></path></svg></span>
+                <span><strong>Education</strong><span>B.Tech, Computer Science and Engineering &middot; 2023&ndash;2027 &middot; GPA 7.91</span></span>
+                <span class="card-arrow" aria-hidden="true">&#8964;</span>
+              </summary>
+              <ul class="elsewhere-detail elsewhere-point-list">
+                <li><span><strong>University:</strong> Amity University Madhya Pradesh</span></li>
+                <li><span><strong>Intermediate:</strong> PCM, Sanskar Public School &middot; GPA 7.1</span></li>
+                <li><span><strong>Grade 10:</strong> St. Paul&rsquo;s School &middot; GPA 8.1</span></li>
+              </ul>
+            </details>
+            <details class="elsewhere-card certifications-card" name="background-details">
+              <summary class="elsewhere-summary">
+                <span class="elsewhere-icon icon-sparkle" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="m12 2 1.8 7.2L21 11l-7.2 1.8L12 20l-1.8-7.2L3 11l7.2-1.8L12 2Z"></path><path d="m19 15 .8 2.2L22 18l-2.2.8L19 21l-.8-2.2L16 18l2.2-.8L19 15Z"></path></svg></span>
+                <span><strong>Certifications</strong><span>NPTEL &middot; Oracle</span></span>
+                <span class="card-arrow" aria-hidden="true">&#8964;</span>
+              </summary>
+              <ul class="elsewhere-detail elsewhere-point-list certification-point-list">
+                <li><span><strong>Advanced R Programming</strong><span>NPTEL</span></span></li>
+                <li><span><strong>Data Science Professional</strong><span>Oracle</span></span></li>
+              </ul>
+            </details>
+          </div>
+          <div class="elsewhere-column">
+            <details class="elsewhere-card technical-skills-card" name="background-details" open>
+              <summary class="elsewhere-summary">
+                <span class="elsewhere-icon icon-sparkle" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="m12 2 1.8 7.2L21 11l-7.2 1.8L12 20l-1.8-7.2L3 11l7.2-1.8L12 2Z"></path><path d="m19 15 .8 2.2L22 18l-2.2.8L19 21l-.8-2.2L16 18l2.2-.8L19 15Z"></path></svg></span>
+                <span><strong>Technical skills</strong><span>Languages, frameworks, databases, and developer tools.</span></span>
+                <span class="card-arrow" aria-hidden="true">&#8964;</span>
+              </summary>
+              <ul class="elsewhere-detail technical-skills-list">
+                <li><strong>Languages:</strong> C, C++, JavaScript, Python, SQL</li>
+                <li><strong>Frameworks and technologies:</strong> React, Node.js, Express.js, HTML5, CSS3, Bootstrap, JWT, WebSocket, Redis, Docker</li>
+                <li><strong>Databases:</strong> PostgreSQL, MySQL, MongoDB</li>
+                <li><strong>Data science:</strong> NumPy, Pandas, Matplotlib, Seaborn</li>
+                <li><strong>Tools:</strong> AWS, Git, GitHub, VS Code, Postman, PyCharm, IntelliJ, Android Studio, Canva</li>
+              </ul>
+            </details>
+          </div>
         </div>
       </section>
     </main>
