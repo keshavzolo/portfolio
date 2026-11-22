@@ -76,7 +76,7 @@
           <a href="#home" aria-current="page">Home</a>
           <a href="#experience">Experience</a>
           <a href="#projects">Projects</a>
-          <a class="anime-nav-link" href="./anime.html">Anime</a>
+          <a class="anime-nav-link" href="#anime">Anime</a>
           <a href="#about">About</a>
         </div>
         <div class="nav-tools">
@@ -108,6 +108,19 @@
             <p class="eyebrow">Full-Stack Developer · CSE Undergraduate</p>
             <h1 id="intro-title">Keshav Maheshwari</h1>
             <p class="profile-tagline">Keep learning. Keep building.</p>
+            <span class="visitor-count" role="img" aria-label="Cumulative visitor count" title="Cumulative visitor count">
+              <svg class="visitor-count-eye" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M2.5 12s3.4-6 9.5-6 9.5 6 9.5 6-3.4 6-9.5 6-9.5-6-9.5-6Z" />
+                <circle cx="12" cy="12" r="2.5" />
+              </svg>
+              <img
+                class="visitor-count-image"
+                src="https://visitor-badge.laobi.icu/badge?page_id=keshavzolo.portfolio&amp;left_text=%20&amp;left_color=transparent&amp;right_color=transparent&amp;height=20"
+                alt=""
+                referrerpolicy="no-referrer"
+              />
+              <span class="visitor-count-fallback" hidden>Unavailable</span>
+            </span>
           </div>
         </div>
         <p class="intro-line">I’m a computer science undergraduate and full-stack developer turning ideas into thoughtful digital experiences—from intuitive interfaces to reliable products that solve real-world problems.</p>
@@ -119,25 +132,65 @@
         </div>
       </section>
 
+      <section class="music-player-section" aria-label="Featured audio">
+        <div class="music-player">
+          <div class="music-art" aria-hidden="true">
+            <div class="music-record"><span class="music-record-label"></span></div>
+            <span class="music-tonearm"></span>
+          </div>
+          <div class="music-player-main">
+            <div class="music-player-top">
+              <div class="music-track-copy">
+                <p class="music-kicker">Now playing</p>
+                <h2>Always With Me</h2>
+                <p class="music-artist">Flute · Spirited Away</p>
+              </div>
+              <button class="music-play-toggle" type="button" aria-label="Play Always With Me" aria-pressed="false">
+                <svg class="music-play-icon" aria-hidden="true" viewBox="0 0 24 24">
+                  <path d="M8 5v14l11-7z"></path>
+                </svg>
+                <svg class="music-pause-icon" aria-hidden="true" viewBox="0 0 24 24">
+                  <path d="M7 5h4v14H7zm6 0h4v14h-4z"></path>
+                </svg>
+              </button>
+            </div>
+            <div class="music-timeline">
+              <input class="music-seek" type="range" min="0" max="1000" value="0" step="1" aria-label="Seek through Always With Me" disabled />
+              <div class="music-time" aria-hidden="true">
+                <span class="music-current-time">00:00</span>
+                <span class="music-duration">00:00</span>
+              </div>
+            </div>
+            <p class="music-status" role="status" aria-live="polite"></p>
+          </div>
+          <audio id="music-audio" preload="metadata">
+            <source src="./always-with-me-flute.mp3" type="audio/mpeg" />
+          </audio>
+        </div>
+      </section>
+
       <section class="content-section contributions-section" aria-label="GitHub contributions">
         <div class="section-heading">
           <a class="contributions-link" href="https://github.com/keshavzolo" target="_blank" rel="noopener noreferrer">View GitHub <span aria-hidden="true">↗</span></a>
         </div>
         <div class="contributions-card">
           <p class="contributions-total" id="contributions-total" aria-live="polite">Loading GitHub contributions...</p>
-          <div class="contributions-scroll" tabindex="0" aria-label="Scrollable contribution calendar">
-            <div class="contributions-calendar" id="contributions-calendar"></div>
+          <div class="contributions-graph-control">
+            <div class="contributions-scroll" tabindex="0" aria-label="Scrollable contribution calendar">
+              <div class="contributions-calendar" id="contributions-calendar"></div>
+            </div>
+            <input class="contributions-slider" type="range" min="0" max="0" value="0" step="1" aria-label="Scroll contribution graph by week" disabled />
+            <div class="contributions-legend" aria-hidden="true">
+              <span>Less</span>
+              <span class="contribution-day level-0"></span>
+              <span class="contribution-day level-1"></span>
+              <span class="contribution-day level-2"></span>
+              <span class="contribution-day level-3"></span>
+              <span class="contribution-day level-4"></span>
+              <span>More</span>
+            </div>
           </div>
           <a class="contributions-error" href="https://github.com/keshavzolo" target="_blank" rel="noopener noreferrer">View contributions on GitHub <span aria-hidden="true">↗</span></a>
-          <div class="contributions-legend" aria-hidden="true">
-            <span>Less</span>
-            <span class="contribution-day level-0"></span>
-            <span class="contribution-day level-1"></span>
-            <span class="contribution-day level-2"></span>
-            <span class="contribution-day level-3"></span>
-            <span class="contribution-day level-4"></span>
-            <span>More</span>
-          </div>
         </div>
       </section>
 
@@ -295,6 +348,39 @@
           </div>
         </div>
       </section>
+
+      <div class="anime-page anime-inline-page">
+        <section class="content-section" id="anime" aria-labelledby="anime-title">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">A few favorites</p>
+              <h1 id="anime-title">Anime</h1>
+            </div>
+          </div>
+          <div class="anime-grid">
+            <article class="anime-card anime-card-naruto">
+              <img class="anime-poster" src="https://cdn.myanimelist.net/images/anime/13/17405.jpg" alt="Naruto" loading="lazy" />
+              <h2 class="anime-title">Naruto</h2>
+            </article>
+            <article class="anime-card anime-card-haikyuu">
+              <img class="anime-poster" src="https://cdn.myanimelist.net/images/anime/7/76014.jpg" alt="Haikyuu!!" loading="lazy" />
+              <h2 class="anime-title">Haikyuu!!</h2>
+            </article>
+            <article class="anime-card anime-card-bleach">
+              <img class="anime-poster" src="https://cdn.myanimelist.net/images/anime/3/40451.jpg" alt="Bleach" loading="lazy" />
+              <h2 class="anime-title">Bleach</h2>
+            </article>
+            <article class="anime-card anime-card-attack-on-titan">
+              <img class="anime-poster" src="https://cdn.myanimelist.net/images/anime/10/47347.jpg" alt="Attack on Titan" loading="lazy" />
+              <h2 class="anime-title">Attack on Titan</h2>
+            </article>
+            <article class="anime-card anime-card-demon-slayer">
+              <img class="anime-poster" src="https://cdn.myanimelist.net/images/anime/1286/99889.jpg" alt="Demon Slayer: Kimetsu no Yaiba" loading="lazy" />
+              <h2 class="anime-title">Demon Slayer</h2>
+            </article>
+          </div>
+        </section>
+      </div>
     </main>
 
     <aside class="closing-note wrap" aria-label="A thought to take with you">
